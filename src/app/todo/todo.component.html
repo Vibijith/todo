@@ -1,0 +1,12 @@
+<div class="todo-container">
+    <h1>Todo List</h1>
+    <input #newTask type="text" placeholder="New task" />
+    <button (click)="addTask(newTask.value); newTask.value=''">Add Task</button>
+    <ul>
+      <li *ngFor="let todo of todos; let i = index">
+        <input type="checkbox" [checked]="todo.completed" (change)="completeTask(i)" />
+        <span [class.completed]="todo.completed">{{ todo.task }}</span>
+        <button (click)="deleteTask(i)">Delete</button>
+      </li>
+    </ul>
+  </div>

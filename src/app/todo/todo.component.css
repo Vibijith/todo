@@ -1,0 +1,43 @@
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content towards the top */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-concept-clipboard_23-2148102669.jpg?w=900&t=st=1722269086~exp=1722269686~hmac=4e89552ede1775b66dd89ecb61e1eee3aa8f7fb9ad98dade879f71f1c78be6b8');
+    background-size: cover;
+    background-position: center;
+    text-align: center; /* Center text and inline elements */
+    padding-top: 50px; /* Add some padding from the top */
+}
+
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+span.completed {
+    font-style: italic;
+    text-decoration: line-through;
+}
